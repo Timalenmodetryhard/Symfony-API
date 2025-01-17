@@ -1,5 +1,4 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+random_dog:
+    path: /api/dogs/random
+    controller: App\Controller\GetRandomDog
+    methods: GET
