@@ -26,6 +26,11 @@ class ImportDogCommand extends Command
         parent::__construct();
     }
 
+    #[AsCommand(
+        name: 'app:import-dog',
+        description: 'Importe des données depuis une API externe vers l\'API Platform',
+    )]
+
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln('Début de l\'importation des races et images...');
